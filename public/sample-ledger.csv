@@ -1,0 +1,51 @@
+reference,date,amount,currency,counterparty,country,account,description,created_by,approved_by
+AP-10400,2026-09-28,16873.76,USD,Amazon Web Services,US,6100 Cloud hosting,Invoice 18949,m.patel,j.ruiz
+AP-10401,2026-09-28,9888.86,USD,Accenture,IE,6400 Professional fees,Invoice 67684,m.patel,j.ruiz
+AP-10402,2026-09-29,10071.30,USD,Accenture,IE,6400 Professional fees,Invoice 57232,j.ruiz,s.okafor
+AP-10403,2026-09-29,4656.09,USD,Tata Consultancy,IN,6400 Contractors,Invoice 63711,m.patel,j.ruiz
+AP-10404,2026-09-30,1269.97,USD,Lufthansa,DE,6500 Travel,Invoice 42110,j.ruiz,s.okafor
+AP-10405,2026-09-30,14833.36,USD,Datadog,US,6100 Software,Invoice 46174,a.chen,m.patel
+AP-10406,2026-10-01,12693.03,USD,Datadog,US,6100 Software,Invoice 51968,j.ruiz,s.okafor
+AP-10407,2026-10-01,16650.01,USD,Datadog,US,6100 Software,Invoice 30184,m.patel,j.ruiz
+AP-10408,2026-10-02,6280.53,USD,Tata Consultancy,IN,6400 Contractors,Invoice 26787,a.chen,m.patel
+AP-10409,2026-10-02,5607.72,USD,Gusto Payroll,US,5000 Payroll,Invoice 50163,s.okafor,a.chen
+AP-10410,2026-10-05,16101.34,USD,Accenture,IE,6400 Professional fees,Invoice 24614,a.chen,m.patel
+AP-10411,2026-10-05,9458.42,USD,Salesforce,US,6100 Software,Invoice 17365,m.patel,j.ruiz
+AP-10412,2026-10-06,1287.84,USD,Datadog,US,6100 Software,Invoice 30971,m.patel,j.ruiz
+AP-10413,2026-10-06,16938.26,USD,Lufthansa,DE,6500 Travel,Invoice 14899,j.ruiz,s.okafor
+AP-20001,2026-10-06,9500.00,USD,Coastal Supply Co,US,6700 Supplies,Cash advance,j.ruiz,m.patel
+AP-10414,2026-10-07,5404.69,USD,Gusto Payroll,US,5000 Payroll,Invoice 38155,m.patel,j.ruiz
+AP-10415,2026-10-07,9869.88,USD,Deloitte LLP,US,6400 Professional fees,Invoice 20990,j.ruiz,s.okafor
+AP-10416,2026-10-08,8541.06,USD,Datadog,US,6100 Software,Invoice 57161,s.okafor,a.chen
+AP-10417,2026-10-08,9592.38,USD,Lufthansa,DE,6500 Travel,Invoice 62009,j.ruiz,s.okafor
+AP-20002,2026-10-08,9800.00,USD,Coastal Supply Co,US,6700 Supplies,Cash advance,j.ruiz,m.patel
+AP-10418,2026-10-09,7441.00,USD,Datadog,US,6100 Software,Invoice 22600,j.ruiz,s.okafor
+AP-10419,2026-10-09,6610.58,USD,Salesforce,US,6100 Software,Invoice 35228,m.patel,j.ruiz
+AP-20003,2026-10-09,9250.00,USD,Coastal Supply Co,US,6700 Supplies,Cash advance,j.ruiz,m.patel
+AP-10420,2026-10-12,16096.04,USD,Accenture,IE,6400 Professional fees,Invoice 73726,a.chen,m.patel
+AP-10421,2026-10-12,7622.47,USD,Amazon Web Services,US,6100 Cloud hosting,Invoice 7009,a.chen,m.patel
+AP-10422,2026-10-13,4260.10,USD,Datadog,US,6100 Software,Invoice 12982,j.ruiz,s.okafor
+AP-10423,2026-10-13,10972.49,USD,Gusto Payroll,US,5000 Payroll,Invoice 82968,a.chen,m.patel
+AP-20004,2026-10-13,48000.00,USD,Volkov Trading LLC,AE,6400 Consulting,Advisory retainer,s.okafor,a.chen
+AP-10424,2026-10-14,16330.34,USD,Tata Consultancy,IN,6400 Contractors,Invoice 81698,s.okafor,a.chen
+AP-10425,2026-10-14,5257.59,USD,Accenture,IE,6400 Professional fees,Invoice 22346,a.chen,m.patel
+AP-20005,2026-10-14,12750.00,USD,Minsk Software Group,BY,6400 Contractors,Dev services Q4,m.patel,j.ruiz
+AP-10426,2026-10-15,328.51,USD,Amazon Web Services,US,6100 Cloud hosting,Invoice 20823,j.ruiz,s.okafor
+AP-10427,2026-10-15,9108.49,USD,Accenture,IE,6400 Professional fees,Invoice 21424,j.ruiz,s.okafor
+AP-20006,2026-10-15,62000.00,USD,Brightline Media,US,6800 Marketing,Campaign prepayment,a.chen,
+AP-10428,2026-10-16,4532.92,USD,Tata Consultancy,IN,6400 Contractors,Invoice 80484,m.patel,j.ruiz
+AP-10429,2026-10-16,9106.69,USD,Stripe Payments,US,6200 Processing fees,Invoice 82169,a.chen,m.patel
+AP-20007,2026-10-16,18400.00,USD,Deloitte LLP,US,6400 Professional fees,Q3 review,s.okafor,s.okafor
+AP-20010,2026-10-18,30000.00,USD,Harbor Bridge Partners,US,6400 Consulting,Retainer,m.patel,a.chen
+AP-10430,2026-10-19,16898.11,USD,Lufthansa,DE,6500 Travel,Invoice 81004,a.chen,m.patel
+AP-10431,2026-10-19,17737.27,USD,Stripe Payments,US,6200 Processing fees,Invoice 61143,j.ruiz,s.okafor
+AP-20008,2026-10-19,7425.50,USD,Datadog,US,6100 Software,Annual true-up,a.chen,j.ruiz
+AP-10432,2026-10-20,4309.98,USD,WeWork,US,6300 Rent,Invoice 50796,a.chen,m.patel
+AP-10433,2026-10-20,14149.62,USD,Amazon Web Services,US,6100 Cloud hosting,Invoice 64266,j.ruiz,s.okafor
+AP-20009,2026-10-20,7425.50,USD,Datadog,US,6100 Software,Annual true-up,a.chen,j.ruiz
+AP-10434,2026-10-21,889.16,USD,Gusto Payroll,US,5000 Payroll,Invoice 82712,a.chen,m.patel
+AP-10435,2026-10-21,12681.51,USD,Stripe Payments,US,6200 Processing fees,Invoice 3335,s.okafor,a.chen
+AP-10436,2026-10-22,15804.60,USD,Tata Consultancy,IN,6400 Contractors,Invoice 85886,s.okafor,a.chen
+AP-10437,2026-10-22,7852.83,USD,Accenture,IE,6400 Professional fees,Invoice 65489,a.chen,m.patel
+AP-10438,2026-10-23,7469.41,USD,Tata Consultancy,IN,6400 Contractors,Invoice 36439,a.chen,m.patel
+AP-10439,2026-10-23,10357.97,USD,Tata Consultancy,IN,6400 Contractors,Invoice 55935,m.patel,j.ruiz

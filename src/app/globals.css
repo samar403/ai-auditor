@@ -1,26 +1,177 @@
 @import "tailwindcss";
 
+/*
+ * "Audit ledger" theme: warm paper, ink, ledger green, and stamp colours for severity.
+ * Every colour is a token so light and dark stay in sync.
+ */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --paper: #f4efe4;
+  --paper-2: #ebe4d4;
+  --sheet: #fbf8f1;
+  --ink: #1d1b16;
+  --ink-2: #4a463c;
+  --ink-3: #7a7464;
+  --rule: #d8cfbb;
+  --rule-strong: #b9ad93;
+  --ledger: #1f4d3a;
+  --ledger-ink: #f4efe4;
+  --ledger-soft: #dfe8dc;
+  --critical: #a8321c;
+  --critical-soft: #f4dcd3;
+  --high: #b5651d;
+  --high-soft: #f5e3cf;
+  --medium: #8a7a1f;
+  --medium-soft: #efe9c8;
+  --low: #3d6273;
+  --low-soft: #dde8ec;
+  --ok: #2f6b45;
+  --ok-soft: #dbeadc;
+  --focus: #1f4d3a;
+  --chart-1: #2f8a5f;
+  --chart-2: #5a6fb4;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  :root:not([data-theme="light"]) {
+    --paper: #13120f;
+    --paper-2: #1b1a16;
+    --sheet: #1e1c18;
+    --ink: #efe8d8;
+    --ink-2: #c6bfae;
+    --ink-3: #8f887a;
+    --rule: #34312a;
+    --rule-strong: #4a463c;
+    --ledger: #7fc4a0;
+    --ledger-ink: #10221a;
+    --ledger-soft: #1d3329;
+    --critical: #f08a73;
+    --critical-soft: #3a1d16;
+    --high: #f0a868;
+    --high-soft: #3a2817;
+    --medium: #d9c96a;
+    --medium-soft: #332f17;
+    --low: #8fbacb;
+    --low-soft: #1a2a31;
+    --ok: #8fd0a6;
+    --ok-soft: #18301f;
+    --focus: #7fc4a0;
+    --chart-1: #3f9a6d;
+    --chart-2: #7d8fdc;
   }
 }
 
+:root[data-theme="dark"] {
+  --paper: #13120f;
+  --paper-2: #1b1a16;
+  --sheet: #1e1c18;
+  --ink: #efe8d8;
+  --ink-2: #c6bfae;
+  --ink-3: #8f887a;
+  --rule: #34312a;
+  --rule-strong: #4a463c;
+  --ledger: #7fc4a0;
+  --ledger-ink: #10221a;
+  --ledger-soft: #1d3329;
+  --critical: #f08a73;
+  --critical-soft: #3a1d16;
+  --high: #f0a868;
+  --high-soft: #3a2817;
+  --medium: #d9c96a;
+  --medium-soft: #332f17;
+  --low: #8fbacb;
+  --low-soft: #1a2a31;
+  --ok: #8fd0a6;
+  --ok-soft: #18301f;
+  --focus: #7fc4a0;
+  --chart-1: #3f9a6d;
+  --chart-2: #7d8fdc;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-2: var(--paper-2);
+  --color-sheet: var(--sheet);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-rule: var(--rule);
+  --color-rule-strong: var(--rule-strong);
+  --color-ledger: var(--ledger);
+  --color-ledger-ink: var(--ledger-ink);
+  --color-ledger-soft: var(--ledger-soft);
+  --color-critical: var(--critical);
+  --color-critical-soft: var(--critical-soft);
+  --color-high: var(--high);
+  --color-high-soft: var(--high-soft);
+  --color-medium: var(--medium);
+  --color-medium-soft: var(--medium-soft);
+  --color-low: var(--low);
+  --color-low-soft: var(--low-soft);
+  --color-ok: var(--ok);
+  --color-ok-soft: var(--ok-soft);
+  --font-sans: var(--font-public-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-fraunces), ui-serif, Georgia, serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+}
+
+html {
+  color-scheme: light dark;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Faint ledger ruling on the page background. */
+.ledger-lines {
+  background-image: repeating-linear-gradient(to bottom, transparent 0 31px, color-mix(in oklab, var(--rule) 45%, transparent) 31px 32px);
+}
+
+.num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.prose-ledger p {
+  margin: 0.5em 0;
+}
+.prose-ledger ul {
+  list-style: disc;
+  padding-left: 1.25em;
+  margin: 0.5em 0;
+}
+.prose-ledger ol {
+  list-style: decimal;
+  padding-left: 1.25em;
+  margin: 0.5em 0;
+}
+.prose-ledger strong {
+  font-weight: 600;
+}
+.prose-ledger code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+}
+.prose-ledger h3,
+.prose-ledger h4 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  margin: 0.75em 0 0.25em;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: white;
+  }
 }
